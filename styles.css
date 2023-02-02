@@ -1,0 +1,13 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.logo_Arg_P{
+    width: 25%;
+}
+
+.bg-light1{
+    background-image: url("Img/blue-electronic-digital-background.webp");
+}
