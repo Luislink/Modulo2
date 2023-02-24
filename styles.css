@@ -44,6 +44,12 @@ section.banner{
     --bs-list-group-border-color: transparent;
 }
 
+
+i.fa-brands.fa-github:hover{
+    color: #6cc644;
+    transform: scale(1.7);
+    }
+
 i.fa-brands.fa-facebook:hover{
 color: #4b89e6;
 transform: scale(1.7);
@@ -86,3 +92,44 @@ img.foto-perfil{
     margin-left: 10px;
     z-index: 1;
 }
+
+.acerca-de-mi{
+    border-top: 3px solid;
+    border-bottom: 3px solid; 
+    border-color: rgb(173, 172, 172);
+}
+.exp-Lab{
+    padding-top: 2px;
+    padding-bottom: 1%;
+}
+
+.experiencias{
+    border-top: 3px solid;
+    border-color: rgb(173, 172, 172);
+}
+
+.logo-Facet{
+    width: 45%;
+}
+.logo_tec{
+    width: 45%;
+    border-radius: 50%;
+    border: solid;
+    border-color: rgb(106, 125, 155);
+}
+.educacion{
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    border-color: rgb(173, 172, 172);
+}
+.logo_IT{
+    width: 45%;
+}
+.logo_UNT{
+    width: 55%;
+}
+/* .acerca-de-mi{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: black;
+} */
