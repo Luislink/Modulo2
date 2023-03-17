@@ -22,9 +22,10 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <!-- Nav bar -->
     <nav class="navbar navbar-light bg-light1">
       <div class="container-fluid" style="flex-wrap: initial">
-        <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+        <a class="navbar-brand" href="/index.html">
           <img class="logo_Arg_P" src="/Img/APLogo-20-20.png" alt="Logo" />
         </a>
         <ul class="list-group list-group-horizontal">
@@ -59,14 +60,11 @@
           </li>
           <li class="list-group-item">
             <a class="nav-link" href="#">
-              <!-- Boton que abre el modal -->
+              <!-- Boton que envia al login -->
               <button
                 class="btn btn-dark btn-lg"
-                type="submit"
-                data-bs-toggle="modal"
-                data-bs-target="#loginModal"
-              >
-                <i class="fa-solid fa-user-lock"></i>
+                type="submit">
+                <a href="/login.html"><i class="fa-solid fa-user-lock text-white"></i></a>
               </button>
             </a>
           </li>
@@ -338,20 +336,6 @@
         </div>
       </div>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://kit.fontawesome.com/4967db7a23.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="/scripts.js"></script>
-    
     <footer>
       <div class="card text-center mt-4 bg-black">
         <div class="card-footer text-muted">
@@ -360,5 +344,17 @@
       </div>
     </footer>
 
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://kit.fontawesome.com/4967db7a23.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="/scripts.js"></script>
   </body>
 </html>
