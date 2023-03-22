@@ -72,7 +72,7 @@ i.fa-solid.fa-user-lock:hover{
 }
 
 h3.intro{
-    padding-top: 15%;
+    padding-top: 10%;
     font-size: 2rem;
 }
 
@@ -84,6 +84,11 @@ h2.intro{
     font-size: 2.2rem;
 }
 
+.mis-datos{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
 img.foto-perfil{
     position: relative;
     /* border-radius: 50%; */
@@ -93,6 +98,9 @@ img.foto-perfil{
     margin-left: 10px;
     z-index: 1;
     transition-duration: 250ms;
+    border-color: black;
+    border-style: solid;
+    border-width: 1.5px;
 }
 img.foto-perfil:hover{
     transform: scale(1.2);
