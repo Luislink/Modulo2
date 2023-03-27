@@ -42,69 +42,98 @@
           </ul>
         </div>
       </nav>
-<!-- Formulario de login -->
-<section class="login">
-    <div class="container">
-        <div class="row">
-          <div class="col-3">
+
+      <!-- Columna lateral -->
+      <div class="container-fluid text-center text-white">
+          <div class="row">
+            <!-- <div class="col-1 Columna-Dashboard">
             
-          </div>
-          <div class="col-6 formulario-login mb-3">
-            <h3>Registra tus datos</h3>
-          </div>
-          <div class="col-3">
-            
-          </div>
-        </div>
-      </div>
-<div class="container">
-    <div class="row">
-      <div class="col-3">
-      </div>
-      <div class="col-6">
-        <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"><b>Email</b></label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                 <b>Nunca compartiremos tu información con nadie.</b>
+            </div> -->
+            <div class="col-4 pt-3 Columna-Dashboard">
+              <img src="/Img/Foto-perfil.jpg" alt="foto" class="rounded-circle img-fluid foto-perfil-dashboard">
+              <h4 class="text-center intro mt-4">
+                Luis Juarez
+              </h4>
+              <h4 class="text-center intro mt-4">
+                Desarrollador Full Stack Jr.
+              </h4>
+            <ul class="list-group mt-4">
+              <!-- Cada li tiene que tener un trigger modal -->
+              <li class="list-group-item admin"><a href="#" class="link" data-bs-toggle="modal" data-bs-target="#BannerModal"><i class="fa-sharp fa-solid fa-share-nodes"></i> Redes</a></li>
+              <li class="list-group-item admin"><a href="#" class="link"><i class="fa-solid fa-image"></i>Banner</a></li>
+              <li class="list-group-item admin"><a href="#" class="link"><i class="fa-solid fa-circle-info"></i> Info</a></li>
+              <li class="list-group-item admin"><a href="#" class="link"><i class="fa-sharp fa-solid fa-file-lines"></i> Acerca de mi</a></li>
+              <li class="list-group-item admin"><a href="#" class="link"><i class="fa-solid fa-briefcase"></i> Experiencia</a></li>
+            </ul>
+            </div>
+            <div class="col-7">
+            <!-- Inicio Banner Modal -->
+              <div class="modal fade" id="BannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Editar Redes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body">
+             ...
+             <div class="container">
+              <div class="row">
+                <div class="col-1">
+                  
+                </div>
+                <div class="col-10">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"><b>Email</b></label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                      <div id="emailHelp" class="form-text">
+                       <b>Nunca compartiremos tu información con nadie.</b>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        ><b>Contraseña</b></label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="col-1">
+                 
                 </div>
               </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  ><b>Contraseña</b></label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-              </div>
-            </form>
+            </div>
+
+            </div>
             <div class="modal-footer">
-                <button
-                  type="submit"
-                  class="btn btn-secondary">
-                  Registrarme
-                </button>
-              </div>
-              <small>Si ya tenes cuenta ingresá <a href="/login.html">aquí</a></small>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Eliminar</button>
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Editar</button>
+            <button type="button" class="btn btn-success">Save changes</button>
+            </div>
           </div>
+          </div>
+        </div>
+      </div> <!--Fin de Banner modal -->
+
+      <div class="col-1">
+            
+        </div>
+        </div>
+
       </div>
-      <div class="col-3">
-      </div>
-    </div>
-  </div>
-</section>
     
     <footer>
-        <div class="card text-center mt-4 bg-black">
+        <div class="card text-center bg-black">
           <div class="card-footer text-muted">
             <h6 class="text-white">Copyright 2023© Luis Antonio Juarez.</h6>
           </div>

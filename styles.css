@@ -70,6 +70,9 @@ i.fa-brands.fa-instagram:hover{
 i.fa-solid.fa-user-lock:hover{
     transform: scale(1.5);
 }
+i.fa-solid.fa-user:hover{
+    transform: scale(1.5);
+}
 
 h3.intro{
     padding-top: 10%;
@@ -221,5 +224,21 @@ body{
 margin-top: 10%;
 }
 
+.img-fluid.foto-perfil-dashboard{
+    width: 50%;
+    margin-left: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1.5px;
+}
+.admin{
+    font-size: 1.2rem;
+}
+a.link{
+    text-decoration: none;
+    color: white;
 
-
+}
+.Columna-Dashboard{
+    background-color: black;
+}
