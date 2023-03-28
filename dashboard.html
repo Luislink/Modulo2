@@ -44,12 +44,10 @@
       </nav>
 
       <!-- Columna lateral -->
-      <div class="container-fluid text-center text-white">
+      <div class="container-fluid text-white">
           <div class="row">
-            <!-- <div class="col-1 Columna-Dashboard">
             
-            </div> -->
-            <div class="col-4 pt-3 Columna-Dashboard">
+            <div class="col-4 pt-3 text-center Columna-Dashboard">
               <img src="/Img/Foto-perfil.jpg" alt="foto" class="rounded-circle img-fluid foto-perfil-dashboard">
               <h4 class="text-center intro mt-4">
                 Luis Juarez
@@ -57,77 +55,372 @@
               <h4 class="text-center intro mt-4">
                 Desarrollador Full Stack Jr.
               </h4>
-            <ul class="list-group mt-4">
+            <ul class="list-group mt-4" id="list-tab" role="tablist">
               <!-- Cada li tiene que tener un trigger modal -->
-              <li class="list-group-item admin"><a href="#" class="link" data-bs-toggle="modal" data-bs-target="#BannerModal"><i class="fa-sharp fa-solid fa-share-nodes"></i> Redes</a></li>
-              <li class="list-group-item admin"><a href="#" class="link"><i class="fa-solid fa-image"></i>Banner</a></li>
-              <li class="list-group-item admin"><a href="#" class="link"><i class="fa-solid fa-circle-info"></i> Info</a></li>
-              <li class="list-group-item admin"><a href="#" class="link"><i class="fa-sharp fa-solid fa-file-lines"></i> Acerca de mi</a></li>
-              <li class="list-group-item admin"><a href="#" class="link"><i class="fa-solid fa-briefcase"></i> Experiencia</a></li>
+              <li class="list-group-item list-group-item-action active admin" id="list-redes-list" data-bs-toggle="list" href="#list-redes" role="tab" aria-controls="list-redes"><a href="#" class="link"><i class="fa-sharp fa-solid fa-share-nodes"></i> Redes</a></li>
+              <li class="list-group-item list-group-item-action admin" id="list-banner-list" data-bs-toggle="list" href="#list-banner" role="tab" aria-controls="list-banner"><a href="#" class="link"><i class="fa-solid fa-image"></i> Banner</a></li>
+              <li class="list-group-item list-group-item-action admin" id="list-info-list" data-bs-toggle="list" href="#list-info" role="tab" aria-controls="list-info"><a href="#" class="link"><i class="fa-solid fa-circle-info"></i> Info</a></li>
+              <li class="list-group-item list-group-item-action admin" id="list-acercademi-list" data-bs-toggle="list" href="#list-acercademi" role="tab" aria-controls="list-acercademi"><a href="#" class="link"><i class="fa-sharp fa-solid fa-file-lines"></i> Acerca de mi</a></li>
+              <li class="list-group-item list-group-item-action admin" id="list-experiencia-list" data-bs-toggle="list" href="#list-experiencia" role="tab" aria-controls="list-experiencia"><a href="#" class="link"><i class="fa-solid fa-briefcase"></i> Experiencia</a></li>
+              <li class="list-group-item list-group-item-action admin" id="list-skill-list" data-bs-toggle="list" href="#list-skill" role="tab" aria-controls="list-skill"><a href="#" class="link"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
             </ul>
-            </div>
-            <div class="col-7">
-            <!-- Inicio Banner Modal -->
-              <div class="modal fade" id="BannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Editar Redes</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-            <div class="modal-body">
-             ...
-             <div class="container">
-              <div class="row">
-                <div class="col-1">
-                  
-                </div>
-                <div class="col-10">
-                  <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label"><b>Email</b></label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                      />
-                      <div id="emailHelp" class="form-text">
-                       <b>Nunca compartiremos tu información con nadie.</b>
+            </div> <!--Fin de columna lateral -->
+
+            <!-- Comienzo de columna de edicion -->
+
+            <div class="col-8">
+              <!-- editar redes -->
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-redes" role="tabpanel" aria-labelledby="list-redes-list">
+                  <div class="container fluid">
+                    <div class="row">
+                      <div class="col-1">
+                       
+                      </div>
+                      <div class="col-10">
+                        <form>
+                          <div class="mb-3">
+                            <h5 class="text-center mt-3"><b>Editar Redes</b></h5>
+                            <label for="linkedin" class="form-label"><b>Linkedin</b></label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="linkedin"/>
+                            
+                              <div class="mt-2">
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                <button type="button" class="btn btn-warning">Actualizar</button>
+                                <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+
+                          </div>
+                          <div class="mb-3">
+                            <label for="facebook" class="form-label"
+                              ><b>Facebook</b></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="facebook"/>
+
+                              <div class="mt-2">
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                <button type="button" class="btn btn-warning">Actualizar</button>
+                                <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="github" class="form-label"
+                              ><b>GitHub</b></label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="github"/>
+
+                              <div class="mt-2">
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                <button type="button" class="btn btn-warning">Actualizar</button>
+                                <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+
+                          </div>
+
+                          <div class="mb-2">
+                            <label for="instagram" class="form-label"
+                              ><b>Instagram</b></label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="instagram"/>
+
+                              <div class="mt-2">
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                <button type="button" class="btn btn-warning">Actualizar</button>
+                                <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+
+                          </div>
+                          
+                        </form>
+                        
+                      </div>
+                      <div class="col-1">
+                      
                       </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label"
-                        ><b>Contraseña</b></label
-                      >
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="exampleInputPassword1"
-                      />
+                  </div>
+                  
+
+                </div>
+                <!-- editar Banner y foto de perfil-->
+                <div class="tab-pane fade" id="list-banner" role="tabpanel" aria-labelledby="list-banner-list">
+                  <div class="container fluid">
+                    <div class="row">
+                      <div class="col-1">
+                       
+                      </div>
+                      <div class="col-10">
+                        <form>
+                          <div class="mb-3">
+                            <h5 class="text-center mt-3"><b>Editar Banner y foto de perfil</b></h5>
+                            <label for="banner" class="form-label mt-2">Banner</label>
+                            <input class="form-control" type="file" id="banner">
+                              <div class="mt-2">
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                <button type="button" class="btn btn-warning">Editar</button>
+                                <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+                                <!-- Foto de perfil -->
+                              <label for="foto-p" class="form-label mt-2">Foto de perfil</label>
+                            <input class="form-control" type="file" id="foto-p">
+                              <div class="mt-2">
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                <button type="button" class="btn btn-warning">Editar</button>
+                                <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+                            </div>
+                        </form>
+                      </div>
+                      <div class="col-1">
+                      
+                      </div>
                     </div>
-                  </form>
-                </div>
-                <div class="col-1">
-                 
-                </div>
-              </div>
-            </div>
+                  </div>
 
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Eliminar</button>
-            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Editar</button>
-            <button type="button" class="btn btn-success">Save changes</button>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div> <!--Fin de Banner modal -->
 
-      <div class="col-1">
+
+                </div>
+                <!-- editar info -->
+                <div class="tab-pane fade" id="list-info" role="tabpanel" aria-labelledby="list-info-list">
+                <div class="container fluid">
+                    <div class="row">
+                      <div class="col-1">
+                       
+                      </div>
+                      <div class="col-10">
+                        <form>
+                          <div class="mb-3">
+                            <h5 class="text-center">Editar información</h5>
+                            <label for="direccion" class="form-label"><b>Dirección</b></label>
+                            
+                            <textarea class="form-control" id="direccion" style="height: 100px"></textarea>
+
+                            <div class="mt-2">
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-warning">Editar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                            </div>
+
+                            <label for="telefono" class="form-label mt-3"><b>Teléfono</b></label>
+                            
+                            <textarea class="form-control" id="telefono" style="height: 50px"></textarea>
+                            
+                            <div class="mt-2">
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-warning">Editar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                            </div>
+                            
+                            <label for="correo" class="form-label mt-3"><b>Correo electrónico</b></label>
+             
+                            <textarea class="form-control" id="correo" style="height: 50px"></textarea>
+
+                            <div class="mt-2">
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-warning">Editar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                            </div>
+                          </div>
+                          
+                          
+                        </form>
+                      </div>
+                      <div class="col-1">
+                      
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- editar Acerca de mi -->
+                <div class="tab-pane fade" id="list-acercademi" role="tabpanel" aria-labelledby="list-acercademi-list">
+                  <div class="container fluid">
+                    <div class="row">
+                      <div class="col-1">
+                       
+                      </div>
+                      <div class="col-10">
+                        <form>
+                          <div class="mb-3">
+                            <h5 class="text-center">Editar</h5>
+                            <label for="acercademi" class="form-label"><b>Acerca de mi</b></label>
+                            
+                            <textarea class="form-control" id="acercademi" style="height: 100px"></textarea>
+
+                            <div class="mt-2">
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-warning">Editar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                            </div>
+                          </div>
+                                              
+                        </form>
+                      </div>
+                      <div class="col-1">
+                      
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              <!-- Editar Experiencia -->
+                <div class="tab-pane fade" id="list-experiencia" role="tabpanel" aria-labelledby="list-experiencia-list">
+                  <div class="container fluid">
+                    <div class="row">
+                      <div class="col-1">
+                       
+                      </div>
+                      <div class="col-10">
+                        <form>
+                          <div class="mb-3">
+                            <h5 class="text-center mt-3"><b>Editar experiencia</b></h5>
+                            <label for="imagen1" class="form-label">Imagen1</label>
+                            <input class="form-control" type="file" id="imagen1">
+                              <div class="mt-2">
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                <button type="button" class="btn btn-warning">Editar</button>
+                                <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+                              <label for="imagen2" class="form-label mt-2">Imagen2</label>
+                            <input class="form-control" type="file" id="imagen2">
+                              <div class="mt-2">
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                <button type="button" class="btn btn-warning">Editar</button>
+                                <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+                            </div>
+                        </form>
+                      </div>
+                      <div class="col-1">
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- Editar skills -->
+                <div class="tab-pane fade" id="list-skill" role="tabpanel" aria-labelledby="list-skill-list">
+                  <div class="container fluid">
+                    <div class="row">
+                      <div class="col-1">
+                       
+                      </div>
+                      <div class="col-10">
+                        <form>
+                            <div class="mb-2 mt-3">
+                            <h5 class="text-center mt-3"><b>Editar Skills</b></h5>
+                            <!-- skill 1 -->
+                            <label for="skill-1" class="form-label"><b>Skill-1</b></label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="skill-1"/>
+                            </div>
+
+                              <div class="mb-1">                                
+                                <label for="skill-1p" class="form-label"><b>Porcentaje</b></label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="skill-1p"/>
+                              </div>
+                              <div class="mt-1">
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                <button type="button" class="btn btn-warning">Editar</button>
+                                <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+                                <!-- skill 2 -->
+                              <div class="mb-2 mt-3">
+                                <label for="skill-2" class="form-label"><b>Skill-2</b></label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="skill-2"/>
+                                </div>
+    
+                                  <div class="mb-1">                                
+                                    <label for="skill-2p" class="form-label"><b>Porcentaje</b></label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="skill-2p"/>
+                                  </div>
+                                  <div>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                    <button type="button" class="btn btn-success">Guardar</button>
+                                  </div>
+
+                                  <!-- skill 3 -->
+                              <div class="mb-2 mt-3">
+                                <label for="skill-3" class="form-label"><b>Skill-3</b></label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="skill-3"/>
+                                </div>
+    
+                                  <div class="mb-1">                                
+                                    <label for="skill-3p" class="form-label"><b>Porcentaje</b></label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="skill-3p"/>
+                                  </div>
+                                  <div>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                    <button type="button" class="btn btn-success">Guardar</button>
+                                  </div>
+
+                                  <!-- skill 4 -->
+                              <div class="mb-2 mt-3">
+                                <label for="skill-4" class="form-label"><b>Skill-4</b></label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="skill-4"/>
+                                </div>
+    
+                                  <div class="mb-1">                                
+                                    <label for="skill-4p" class="form-label"><b>Porcentaje</b></label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="skill-4p"/>
+                                  </div>
+                                  <div>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                    <button type="button" class="btn btn-success">Guardar</button>
+                                  </div>
+                        </form>
+                      </div>
+                      <div class="col-1">
+                      
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+            </div>
+            <div class="col-1">
             
-        </div>
+            </div>
         </div>
 
       </div>
